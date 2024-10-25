@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact - Mon cool site</title>
+    <title>Contact - Peuff Store </title>
+    <link rel="icon" href="./assets/icon.png" type="image/png">
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <header class="header">
         <nav>
-            <a href="#">
+            <a href="index.html">
                 <img src="./assets/icon.png" alt="site icon" />
             </a>
             <ul>
@@ -19,12 +20,32 @@
             </ul>
         </nav>
     </header>
+
     <main>
         <section class="main_section">
-            <h1>Contact Us</h1>
-            <p>Contact details or form goes here.</p>
+            <h1>Contactez-Nous</h1>
+            <p>
+                Vous pouvez nous contacter par email à <a href="mailto:contact@monsite.com">contact@peuffstore.com</a>
+                ou via notre formulaire en ligne. Nous nous efforçons de répondre à toutes les demandes dans les plus brefs délais.
+            </p>
+            <form action="#" method="post">
+                <label for="name">Nom:</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
         </section>
     </main>
-    <footer></footer>
+
+    <footer>
+        <p>&copy; 2024 Peuff Store . Tous droits réservés.</p>
+    </footer>
 </body>
 </html>
+

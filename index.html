@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mon cool site</title>
+    <title>H.T</title>
+    <link rel="icon" href="./assets/icon.png" type="image/png"> 
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <header class="header">
         <nav>
-            <a href="#">
+            <a href="index.html">
                 <img src="./assets/icon.png" alt="site icon" />
             </a>
             <ul>
@@ -19,26 +20,66 @@
             </ul>
         </nav>
     </header>
+
     <main>
         <section class="main_section">
-            <h1>Mon site</h1>
+            <h1>Bienvenue sur H.T</h1>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-                facilis autem officiis repellendus! Dolores nisi ipsam odit adipisci
-                non. Neque, eum voluptas?
+                Découvrez notre site où vous trouverez des produits fascinant.
+                 Nous sommes passionnés par ce que nous faisons et nous nous engageons 
+                 à fournir la meilleure expérience possible à nos visiteurs.
             </p>
-            <button class="cta-button">Call To Action !</button>
+            <button class="cta-button">Click Ici</button>
         </section>
+
         <section class="second_section">
-            <h2>Second title</h2>
+            <h2>Notre Mission</h2>
             <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque
-                exercitationem perspiciatis asperiores eius molestias corporis ratione
-                eveniet! Earum, similique praesentium? Recusandae id molestiae
-                corporis dolorum, rerum deserunt accusantium unde dicta.
+                Notre mission est de révolutionner le marché avec des produits
+                innovantes et efficaces. Nous visons à être les leaders dans notre
+                domaine en offrant des produits de haute qualité et un service client
+                exceptionnel.
             </p>
+        </section>
+
+        <section class="product_section">
+            <h2>Notre Catalogue</h2>
+
+            <div class="filters">
+                <button class="filter-button active" data-filter="all">Tous</button>
+                <button class="filter-button" data-filter="cat1">Catégorie 1</button>
+                <button class="filter-button" data-filter="cat2">Catégorie 2</button>
+            </div>
+
+            <div class="product_grid">
+                <div class="product_card" data-category="cat1">
+                    <img src="./assets/product1.png" alt="Produit 1" />
+                    <h3>Peuff myrtille</h3>
+                    <p>Ceci est une description courte du produit 1.</p>
+                    <button class="open-modal">Voir Plus</button>
+                </div>
+                <div class="product_card" data-category="cat2">
+                    <img src="./assets/product2.jpg" alt="Produit 2" />
+                    <h3>Peuff cerise </h3>
+                    <p>Ceci est une description courte du produit 2.</p>
+                    <button class="open-modal">Voir Plus</button>
+                </div>
+            </div>
         </section>
     </main>
-    <footer></footer>
+
+    <div id="productModal" class="modal">
+        <div class="modal_content">
+            <span class="close">&times;</span>
+            <h3>Détails du Produit</h3>
+            <p>Voici plus d'informations sur le produit sélectionné.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Peuff store. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
